@@ -121,3 +121,10 @@ git push -u origin feature/my-change
 ```
 
 Questions about release timing or branch protection should go to the project owner (repository admin).
+
+## Push rejected (403) on HTTPS
+
+If `git push` says permission denied for another GitHub user, your machine is using the wrong saved credentials. Fix one of these ways:
+
+- **SSH (recommended for this repo):** `git remote set-url origin git@github.com:jancicS/saikros-website.git` and ensure your SSH key is [added to the GitHub account that owns the repo](https://github.com/settings/keys).
+- **GitHub CLI:** run `gh auth login` and authenticate as the account with access to `jancicS/saikros-website`, or `gh auth switch` if you use multiple accounts.
