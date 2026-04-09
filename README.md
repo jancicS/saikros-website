@@ -22,4 +22,4 @@ Long-lived branches: **`dev`**, **`stage`**, **`production`** (plus **`main`** a
 
 ## Repo
 
-[`jancicS/saikros-website`](https://github.com/jancicS/saikros-website)
+Maintained under [`jancicS/saikros-website`](https://github.com/jancicS/saikros-website).

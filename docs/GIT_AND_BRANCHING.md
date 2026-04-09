@@ -73,7 +73,7 @@ git add -p          # or git add <files> — review chunks before staging
 git commit -m "Content: clarify hero headline"
 ```
 
-Write commits in **present tense**, short subject line, optional body for “why”.
+Write commits in **present tense**, short subject line, optional body for "why".
 
 ### 6. Push your branch to GitHub
 
@@ -85,7 +85,7 @@ git push -u origin content/update-hero-headline
 
 - **Base:** `dev` (not `production`).
 - **Compare:** your branch.
-- Describe what changed and how to verify (e.g. “Run `npm run dev`, check hero on home”).
+- Describe what changed and how to verify (e.g. "Run `npm run dev`, check hero on home").
 
 After review/approval, **merge into `dev`**. Delete the remote branch when GitHub offers—keeps the repo tidy.
 
@@ -105,7 +105,7 @@ Always run **`npm run build`** locally before merging to `stage` or `production`
 
 ## If something goes wrong
 
-- **Revert a merge:** on GitHub, use “Revert” on the merged PR, or `git revert <merge-commit-sha>`.
+- **Revert a merge:** on GitHub, use "Revert" on the merged PR, or `git revert <merge-commit-sha>`.
 - **Wrong base branch:** close the PR and open a new one with base `dev`.
 - **Conflicts:** pull latest `dev`, merge or rebase into your feature branch, resolve files, push again.
 
