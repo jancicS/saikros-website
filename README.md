@@ -1,25 +1,25 @@
 # Saikros website
 
-Marketing site for **Saikros** — Next.js (App Router), static export, hosted on Firebase.
+Next.js (App Router) marketing site, static export + Firebase Hosting.
 
-- **Repository:** [github.com/jancicS/saikros-website](https://github.com/jancicS/saikros-website)
-- **Branching & how to ship changes:** see [docs/GIT_WORKFLOW.md](./docs/GIT_WORKFLOW.md)
+## Quick start
 
-## Scripts
+```bash
+npm install
+npm run dev
+```
 
-| Command        | Description |
-|----------------|-------------|
-| `npm run dev`  | Local development server |
-| `npm run build`| Production build + static export to `out/` |
-| `npm run deploy` | `next build` then `firebase deploy` (Hosting) |
+```bash
+npm run build   # output: out/
+npm run deploy  # build + firebase deploy
+```
 
-## Requirements
+## Git branches & safe updates
 
-- Node.js (LTS recommended)
-- Firebase CLI (`firebase login`) with access to the Hosting project
+**Read this first if you are editing the repo:** [docs/GIT_AND_BRANCHING.md](./docs/GIT_AND_BRANCHING.md)
 
-## Project layout
+Long-lived branches: **`dev`**, **`stage`**, **`production`** (plus **`main`** as the default integration line on GitHub). Use a **new branch per change** and open pull requests—never pile unrelated edits on one branch.
 
-- `app/` — routes, layout, global styles
-- `components/landing/` — page sections
-- `firebase.json` — Hosting `public` → `out`
+## Repo
+
+[`jancicS/saikros-website`](https://github.com/jancicS/saikros-website)

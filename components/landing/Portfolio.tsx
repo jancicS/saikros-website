@@ -77,7 +77,7 @@ export function Portfolio() {
           </div>
         </motion.div>
 
-        <div className="mt-20 grid min-w-0 gap-8 sm:mt-24 lg:grid-cols-12 lg:grid-rows-[auto_auto] lg:gap-8">
+        <div className="mt-20 grid gap-8 sm:mt-24 lg:grid-cols-12 lg:grid-rows-[auto_auto] lg:gap-8">
           <motion.article
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -168,19 +168,19 @@ export function Portfolio() {
             viewport={viewportOnce}
             transition={{ duration: 0.5, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
             whileHover={{ y: -4, transition: { type: "spring", stiffness: 380, damping: 28 } }}
-            className="group min-w-0 overflow-hidden rounded-[2rem] border border-black/10 bg-white lg:col-span-8"
+            className="group overflow-hidden rounded-[2rem] border border-black/10 bg-white lg:col-span-8"
           >
-            <div className="grid min-w-0 grid-cols-1 gap-0 sm:grid-cols-[minmax(0,0.46fr)_minmax(0,0.54fr)]">
-              <div className="relative aspect-[4/3] min-h-[14rem] min-w-0 w-full overflow-hidden sm:aspect-auto sm:h-full sm:min-h-[18rem]">
+            <div className="grid grid-cols-1 gap-0 lg:grid-cols-[minmax(0,0.72fr)_minmax(0,1fr)]">
+              <div className="relative aspect-[4/3] min-h-[14rem] w-full min-w-0 shrink-0 overflow-hidden sm:min-h-[18rem] lg:min-h-[22rem]">
                 <Image
                   src={third.image}
                   alt={third.alt}
                   fill
                   className="object-cover transition duration-700 group-hover:scale-[1.03]"
-                  sizes="(min-width: 640px) 28vw, 100vw"
+                  sizes="(min-width: 1024px) 38vw, 100vw"
                 />
               </div>
-              <div className="relative z-[1] flex min-w-0 flex-col justify-between bg-white p-8 sm:p-10">
+              <div className="flex min-w-0 flex-col justify-between p-8 sm:p-10">
                 <div>
                   <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-ink-muted">
                     {third.tag}
