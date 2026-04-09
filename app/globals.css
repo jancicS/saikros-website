@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --void: #f5f6f8;
+  --void-elevated: #ffffff;
+  --void-subtle: #eef1f5;
+  --ink: #0b0d12;
+  --ink-muted: #5c6676;
+  --signal: #275dff;
+  --signal-2: #6e8bff;
+  --signal-dim: rgba(39, 93, 255, 0.16);
+  --neon-cyan: rgba(92, 131, 255, 0.42);
+  --neon-violet: rgba(80, 103, 255, 0.34);
+  --neon-mint: rgba(169, 185, 255, 0.2);
+  --aurora-1: rgba(72, 102, 255, 0.08);
+  --aurora-2: rgba(111, 143, 255, 0.16);
+  --grid: rgba(11, 13, 18, 0.06);
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  /* Avoid horizontal pan / blank gutters on mobile (100vw + transforms often overflow). */
+  overflow-x: clip;
+}
+
+@supports not (overflow: clip) {
+  html {
+    overflow-x: hidden;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  color: var(--ink);
+  background: var(--void);
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  overscroll-behavior-x: none;
+  /* Keep vertical scroll natural; discourage sideways rubber-band when width jitters. */
+  touch-action: pan-y pinch-zoom;
+}
+
+::selection {
+  background: rgba(39, 93, 255, 0.22);
+  color: var(--ink);
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--signal);
+  outline-offset: 3px;
+}
+
+.snap-x-mandatory {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+.snap-start-card {
+  scroll-snap-align: start;
+}
