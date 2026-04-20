@@ -7,7 +7,9 @@ Firebase always serves your site on **exactly two default hostnames**, both deri
 - `https://<PROJECT_ID>.web.app`
 - `https://<PROJECT_ID>.firebaseapp.com`
 
-So if the project ID is `ai-notre`, you will see **`ai-notre.web.app`** and **`ai-notre.firebaseapp.com`**. If you still see **`joseph-ai-website.web.app`**, you are either viewing the **old** project in the console or the **project ID** was never changed to `ai-notre` (display-name-only “rename” does not change URLs). Create or select the project whose ID is `ai-notre` to get the new URLs.
+So if the project ID is `my-app`, you will see **`my-app.web.app`** and **`my-app.firebaseapp.com`**. **Renaming the display name** (e.g. to “AI Notre”) does **not** change the project ID or these URLs.
+
+This repo deploys to project ID **`joseph-ai-website`** (display name may show as “ai-notre” in `firebase projects:list`). Default sites: **`joseph-ai-website.web.app`** and **`joseph-ai-website.firebaseapp.com`**. To get `ai-notre.web.app`, you would need a **new** Firebase project whose **project ID** is literally `ai-notre` (if available), or use a **custom domain**.
 
 ## Can I rename an existing Firebase project to `ai-notre`?
 
@@ -17,13 +19,13 @@ To get a default hosting URL like **`https://ai-notre.web.app`**:
 
 1. In [Firebase Console](https://console.firebase.google.com/), **Add project** and choose project ID **`ai-notre`** (must be globally unique; if taken, try `ai-notre-site`, etc.).
 2. Enable **Hosting** for that project.
-3. On your machine: `firebase login` then `firebase use --add` and select the new project (or rely on `.firebaserc` in this repo, which targets **`ai-notre`**).
+3. On your machine: `firebase login` then `firebase use --add` and select the new project (or update `.firebaserc` `default` to that project ID).
 4. Deploy: `npm run deploy` (runs `next build` + `firebase deploy`).
 
 ## Custom domain (optional)
 
-You can also keep any Firebase project ID and map **`www.ai-notre.com`** (or similar) in Hosting → Custom domains—often better for brand than `.web.app` alone.
+You can keep project ID `joseph-ai-website` and map **`www.ai-notre.com`** (or similar) in Hosting → Custom domains—often the best brand URL.
 
-## Until the new project exists
+## This repo’s default target
 
-If `ai-notre` is not created yet, `firebase deploy` will fail. Either create the project as above or temporarily point `.firebaserc` `default` back to a project you already have access to.
+`.firebaserc` uses **`joseph-ai-website`** so deploy matches the project shown in `firebase projects:list` (display name “ai-notre”, ID `joseph-ai-website`).

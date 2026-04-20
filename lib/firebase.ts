@@ -1,6 +1,6 @@
 import { getApp, getApps, initializeApp, type FirebaseApp } from "firebase/app";
 
-/** AI Notre app. Firebase project id is set in `.firebaserc` (target: `ai-notre`). */
+/** AI Notre app. Firebase project id is set in `.firebaserc` (default: `joseph-ai-website`). */
 const firebaseConfig = {
   apiKey:
     process.env.NEXT_PUBLIC_FIREBASE_API_KEY ??

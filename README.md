@@ -14,7 +14,7 @@ npm run build   # output: out/
 npm run deploy  # build + firebase deploy
 ```
 
-Firebase project id is configured in `.firebaserc` (default **`ai-notre`**). See [docs/FIREBASE_HOSTING.md](./docs/FIREBASE_HOSTING.md) if you need **`https://ai-notre.web.app`**—you must create that Firebase project first (IDs cannot be renamed).
+Firebase **project ID** (used for deploy and default `*.web.app` URLs) is in `.firebaserc` — currently **`joseph-ai-website`** (display name in the console may be “ai-notre”). See [docs/FIREBASE_HOSTING.md](./docs/FIREBASE_HOSTING.md) for URLs and custom domains.
 
 Brand source exports from the client live in **`ai notre/`**; deployable logos are copied under **`public/ai-notre-*.png`**.
 
