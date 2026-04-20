@@ -1,6 +1,6 @@
 "use client";
 
-import { SaikrosLogo } from "@/components/brand/SaikrosLogo";
+import { AiNotreWordmark } from "@/components/brand/AiNotreLogo";
 import { MotionLink } from "@/components/ui/MotionLink";
 
 const legalLinks = [
@@ -26,34 +26,27 @@ export function SiteFooter() {
           <div className="lg:col-span-5">
             <MotionLink
               href="#landing-top"
-              className="focus-ring group inline-flex items-center gap-4 rounded-md text-white"
+              className="focus-ring group block w-fit max-w-full rounded-md text-white"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.98 }}
             >
-              <span className="flex h-[4.5rem] w-[4.5rem] shrink-0 items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-black/40 sm:h-[5.5rem] sm:w-[5.5rem]">
-                <SaikrosLogo
-                  size={256}
-                  className="h-[85%] w-[85%] object-contain"
-                />
-              </span>
-              <span className="font-display text-2xl font-semibold tracking-tight sm:text-3xl">
-                Saikros
-              </span>
+              <AiNotreWordmark tone="light" priority />
             </MotionLink>
             <p className="mt-6 max-w-md text-sm leading-relaxed text-white/55">
-              US-based AI studio integrating models, computer vision, and
-              automation into product-grade experiences.
+              AI studio for practical integration, computer vision, and
+              automation—delivered as product-grade experiences your team can
+              run.
             </p>
             <p className="mt-8 text-sm text-white/45">
-              <span className="font-medium text-white/70">Saikros</span>
+              <span className="font-medium text-white/70">AI Notre</span>
               <br />
               <MotionLink
-                href="mailto:hello@saikros.com"
+                href="mailto:hello@ai-notre.com"
                 className="mt-1 inline-block focus-ring text-white/55 underline-offset-4 hover:text-white"
                 whileHover={{ y: -1 }}
                 whileTap={{ scale: 0.99 }}
               >
-                hello@saikros.com
+                hello@ai-notre.com
               </MotionLink>
             </p>
           </div>
@@ -102,7 +95,7 @@ export function SiteFooter() {
 
         <div className="mt-16 flex flex-col gap-4 border-t border-white/10 pt-10 text-sm text-white/45 sm:flex-row sm:items-center sm:justify-between sm:mt-20 sm:pt-12">
           <p>
-            © {new Date().getFullYear()} Saikros. All rights reserved.
+            © {new Date().getFullYear()} AI Notre. All rights reserved.
           </p>
           <nav
             aria-label="Footer legal shortcuts"

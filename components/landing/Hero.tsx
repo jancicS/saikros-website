@@ -57,7 +57,7 @@ export function Hero() {
               className="flex flex-wrap gap-2"
             >
               <span className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[11px] font-medium tracking-tight text-white/78 backdrop-blur-sm">
-                US AI studio
+                AI Notre studio
               </span>
               <span className="rounded-full border border-white/15 bg-white/5 px-3 py-1 text-[11px] font-medium tracking-tight text-white/78 backdrop-blur-sm">
                 Product + systems delivery
@@ -77,8 +77,8 @@ export function Hero() {
               variants={fadeUp}
               className="max-w-md text-base leading-7 text-white/68 sm:text-lg"
             >
-              Saikros ships integration, computer vision, and automation with
-              product-grade UX - so teams get deployable systems, not another AI
+              AI Notre ships integration, computer vision, and automation with
+              product-grade UX—so teams get deployable systems, not another AI
               concept deck.
             </motion.p>
             <motion.div
@@ -87,7 +87,7 @@ export function Hero() {
             >
               <MotionLink
                 href="#contact"
-                className="focus-ring inline-flex items-center gap-2 rounded-full bg-signal px-7 py-3.5 text-sm font-semibold text-white shadow-[0_14px_34px_-12px_rgba(39,93,255,0.7)] transition-colors hover:bg-[#1f52ef]"
+                className="focus-ring inline-flex items-center gap-2 rounded-full bg-signal px-7 py-3.5 text-sm font-semibold text-white shadow-[0_14px_34px_-12px_rgba(130,0,255,0.55)] transition-colors hover:bg-[#6b00cc]"
                 whileHover={{ y: -4 }}
                 whileTap={{ scale: 0.98 }}
               >

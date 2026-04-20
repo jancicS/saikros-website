@@ -3,7 +3,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import { SaikrosLogo } from "@/components/brand/SaikrosLogo";
+import { AiNotreLogo } from "@/components/brand/AiNotreLogo";
 import { MotionLink } from "@/components/ui/MotionLink";
 
 const nav = [
@@ -98,8 +98,8 @@ export function SiteHeader() {
       ? "border-white/12 bg-black/35 backdrop-blur-sm"
       : "border-white/14 bg-white/[0.05] backdrop-blur-sm";
   const desktopCtaClass = solidNav
-    ? "border-signal bg-signal text-white hover:bg-[#1f52ef]"
-    : "border-signal bg-signal text-white shadow-[0_10px_28px_-12px_rgba(39,93,255,0.55)] hover:bg-[#1f52ef]";
+    ? "border-signal bg-signal text-white hover:bg-[#6b00cc]"
+    : "border-signal bg-signal text-white shadow-[0_10px_28px_-12px_rgba(130,0,255,0.45)] hover:bg-[#6b00cc]";
   const mobileTriggerClass = solidNav
     ? "border-black/10 bg-white text-ink"
     : `border-white/20 bg-white/10 !text-white backdrop-blur-sm ${textShadowOnDark}`;
@@ -122,14 +122,15 @@ export function SiteHeader() {
           <span
             className={`flex size-10 shrink-0 items-center justify-center overflow-hidden rounded-xl border shadow-sm transition-colors group-hover:border-signal ${logoTileClass}`}
           >
-            <SaikrosLogo
+            <AiNotreLogo
+              variant="mark"
               size={80}
               className="size-7 object-contain"
               priority
             />
           </span>
           <span className="font-display text-lg font-medium tracking-[-0.03em] sm:text-xl">
-            Saikros
+            AI Notre
           </span>
         </MotionLink>
 

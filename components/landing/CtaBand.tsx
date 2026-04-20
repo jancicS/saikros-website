@@ -45,12 +45,12 @@ export function CtaBand() {
           </motion.div>
           <MotionLink
             variants={fadeUp}
-            href="mailto:hello@saikros.com"
-            className="focus-ring inline-flex h-fit shrink-0 items-center justify-center rounded-full bg-signal px-8 py-3.5 text-center text-base font-semibold text-white shadow-[0_18px_42px_-16px_rgba(39,93,255,0.75)] transition-colors hover:bg-[#1f52ef]"
+            href="mailto:hello@ai-notre.com"
+            className="focus-ring inline-flex h-fit shrink-0 items-center justify-center rounded-full bg-signal px-8 py-3.5 text-center text-base font-semibold text-white shadow-[0_18px_42px_-16px_rgba(130,0,255,0.55)] transition-colors hover:bg-[#6b00cc]"
             whileHover={{ y: -4 }}
             whileTap={{ scale: 0.98 }}
           >
-            hello@saikros.com
+            hello@ai-notre.com
           </MotionLink>
         </motion.div>
       </div>

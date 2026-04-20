@@ -32,6 +32,9 @@ yarn-error.log*
 firebase-debug.log
 firestore-debug.log
 
+# Large local brand kit (Illustrator/PSD exports); shipped logos live in public/
+/ai notre/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

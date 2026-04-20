@@ -11,9 +11,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Saikros - US AI agency for integration, vision & automation",
+  title: "AI Notre - AI integration, vision & automation",
   description:
-    "Saikros is a US-based team shipping AI integration, computer vision, automation, and product UI - built for operators who need outcomes, not slides.",
+    "AI Notre ships integration, computer vision, automation, and product UI—built for teams who need working systems, not slide decks.",
 };
 
 export default function RootLayout({

@@ -8,14 +8,14 @@
   --void-subtle: #eef1f5;
   --ink: #0b0d12;
   --ink-muted: #5c6676;
-  --signal: #275dff;
-  --signal-2: #6e8bff;
-  --signal-dim: rgba(39, 93, 255, 0.16);
-  --neon-cyan: rgba(92, 131, 255, 0.42);
-  --neon-violet: rgba(80, 103, 255, 0.34);
-  --neon-mint: rgba(169, 185, 255, 0.2);
-  --aurora-1: rgba(72, 102, 255, 0.08);
-  --aurora-2: rgba(111, 143, 255, 0.16);
+  --signal: #8200ff;
+  --signal-2: #a855f7;
+  --signal-dim: rgba(130, 0, 255, 0.16);
+  --neon-cyan: rgba(130, 100, 255, 0.38);
+  --neon-violet: rgba(100, 40, 220, 0.34);
+  --neon-mint: rgba(180, 160, 255, 0.2);
+  --aurora-1: rgba(100, 50, 200, 0.09);
+  --aurora-2: rgba(130, 80, 255, 0.14);
   --grid: rgba(11, 13, 18, 0.06);
 }
 
@@ -49,7 +49,7 @@ body {
 }
 
 ::selection {
-  background: rgba(39, 93, 255, 0.22);
+  background: rgba(130, 0, 255, 0.22);
   color: var(--ink);
 }
 

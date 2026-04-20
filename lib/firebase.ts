@@ -1,6 +1,6 @@
 import { getApp, getApps, initializeApp, type FirebaseApp } from "firebase/app";
 
-/** App brand: Saikros. Firebase project id / domains may still use the legacy console slug until migrated. */
+/** AI Notre app. Firebase project id is set in `.firebaserc` (target: `ai-notre`). */
 const firebaseConfig = {
   apiKey:
     process.env.NEXT_PUBLIC_FIREBASE_API_KEY ??

@@ -31,7 +31,7 @@ export function VideoIntro() {
               variants={fadeUp}
               className="text-[11px] font-semibold uppercase tracking-[0.22em] text-ink-muted"
             >
-              Why Saikros
+              Why AI Notre
             </motion.p>
             <motion.h2
               variants={fadeUp}

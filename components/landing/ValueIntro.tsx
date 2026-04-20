@@ -50,8 +50,8 @@ export function ValueIntro() {
               variants={fadeUp}
               className="max-w-xl text-lg leading-8 text-ink-muted"
             >
-              Saikros helps US teams turn AI ambition into systems people can
-              actually use - integration, computer vision, automation, and the
+              AI Notre helps teams turn AI ambition into systems people can
+              actually use—integration, computer vision, automation, and the
               interface layer that makes adoption stick.
             </motion.p>
             <motion.div variants={fadeUp} className="mt-12 grid gap-4 lg:mt-8">

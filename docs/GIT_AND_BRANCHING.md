@@ -1,4 +1,4 @@
-# Git workflow for Saikros website
+# Git workflow for AI Notre website
 
 This repository uses **long-lived branches** so changes stay reviewable and safe. You can edit content and small UI tweaks yourself by following this flow.
 

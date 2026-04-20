@@ -1,4 +1,4 @@
-# Saikros website
+# AI Notre website
 
 Next.js (App Router) marketing site, static export + Firebase Hosting.
 
@@ -13,6 +13,10 @@ npm run dev
 npm run build   # output: out/
 npm run deploy  # build + firebase deploy
 ```
+
+Firebase project id is configured in `.firebaserc` (default **`ai-notre`**). See [docs/FIREBASE_HOSTING.md](./docs/FIREBASE_HOSTING.md) if you need **`https://ai-notre.web.app`**—you must create that Firebase project first (IDs cannot be renamed).
+
+Brand source exports from the client live in **`ai notre/`**; deployable logos are copied under **`public/ai-notre-*.png`**.
 
 ## Git branches & safe updates
 
