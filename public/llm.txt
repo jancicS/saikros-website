@@ -1,0 +1,4 @@
+Canonical language-model guidance for this site is published at:
+https://joseph-ai-website.web.app/llms.txt
+
+Use `/llms.txt` as the primary source for current public-site facts and constraints.

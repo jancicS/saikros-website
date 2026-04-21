@@ -1,0 +1,21 @@
+{
+  "name": "AI Notre",
+  "short_name": "AI Notre",
+  "description": "AI integration, computer vision, automation, and product-grade UX for deployable systems.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#090b10",
+  "theme_color": "#090b10",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
